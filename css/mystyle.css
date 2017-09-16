@@ -1,0 +1,47 @@
+#main{
+    height: 640px;
+    width: 640px;
+    left: 400px;
+    position: absolute;
+    top: 100px;
+    margin: 20px;
+    padding-top: 0px;
+    border: 20px solid #333;
+}
+.square{
+    height: 80px;
+    width: 80px;
+    float:left;
+}
+.img:hover{
+    box-shadow: inset 0px 0px 15px 15px rgba(243,156,18,.8);
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+.selectpath{
+    box-shadow: inset 0px 0px 15px 15px rgba(159,60,255,.8);
+}
+.crosspices{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 15px 15px #ff3131;
+}
+h1{
+    text-align: center;
+}
+.white{
+    background-color: #fff;
+    height: 80px;
+    width: 80px;
+    float:left;
+}
+.black{
+    background-color: #999;
+    height: 80px;
+    width: 80px;
+    float:left;
+}
+.img{
+    width: 70px;
+    height: 70px;
+}

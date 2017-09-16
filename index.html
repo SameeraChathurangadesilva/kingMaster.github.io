@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chess Game</title>
+
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css">
+    <link href="css/bootstrap-theme.min.css">
+    <link href="css/semantic.min.css">
+    <link rel="shortcut icon" href="images/Knight-white_256x256_32.png">
+
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <h1>Chess Game</h1>
+    <div class="col-lg-9" id="main">
+        <div class="row" id="r1">
+            <div class=" square white" id="A1" ><img src="images/rook-black.png" class="chesspieces img chesspieces blackrock" id="BlackruckA"></div>
+            <div class=" square black" id="B1"><img src="images/chessknight.png" class="chesspieces img chesspieces" id="BlackNigthB"></div>
+            <div class=" square white" id="C1"><img src="images/Bishop-black_256x256_32.png"  class="chesspieces img chesspieces" id="BlackbishopC"></div>
+            <div class=" square black" id="D1"><img src="images/7583-256x256x32.png"  class="chesspieces img chesspieces" id="BlackQueenD"></div>
+            <div class=" square white" id="E1"><img src="images/chess_PNG8421.png"  class="chesspieces img chesspieces blackking" id="BlackKingE"></div>
+            <div class=" square black" id="F1"><img src="images/Bishop-black_256x256_32.png"  class="chesspieces img chesspieces" id="BlackbishopF"></div>
+            <div class=" square white" id="G1"><img src="images/chessknight.png"  class="chesspieces img chesspieces" id="BlackNigtG"></div>
+            <div class="square black" id="H1"><img src="images/rook-black.png"  class="chesspieces img chesspieces blackrock" id="BlackruckH"></div>
+        </div>
+        <div class="row" id="r2">
+            <div class="square black" id="A2"><img src="images/chess_PNG8422.png" class="img chesspieces blackpond black1" id="BlackpondA"></div>
+            <div class=" square white" id="B2"><img src="images/chess_PNG8422.png" class="img chesspieces blackpond black1" id="BlackpondB"></div>
+            <div class=" square black" id="C2"><img src="images/chess_PNG8422.png"  class="img chesspieces blackpond black1" id="BlackpondC"></div>
+            <div class=" square white" id="D2"><img src="images/chess_PNG8422.png"  class="img chesspieces blackpond black1" id="BlackpondD"></div>
+            <div class=" square black" id="E2"><img src="images/chess_PNG8422.png"  class="img chesspieces blackpond black1" id="BlackpondE"></div>
+            <div class=" square white" id="F2"><img src="images/chess_PNG8422.png"  class="img chesspieces blackpond black1" id="BlackpondF"></div>
+            <div class="square black" id="G2"><img src="images/chess_PNG8422.png"  class="img chesspieces blackpond black1" id="BlackpondG"></div>
+            <div class=" square white" id="H2"><img src="images/chess_PNG8422.png"  class="img chesspieces blackpond black1" id="BlackpondH"></div>
+        </div>
+        <div class="row" id="r3">
+            <div class=" square white" id="A3"></div>
+            <div class=" square black" id="B3"></div>
+            <div class=" square white" id="C3"></div>
+            <div class=" square black" id="D3"></div>
+            <div class=" square white" id="E3"></div>
+            <div class=" square black" id="F3"></div>
+            <div class=" square white" id="G3"></div>
+            <div class=" square black" id="H3"></div>
+        </div>
+        <div class="row" id="r4">
+            <div class=" square black" id="A4"></div>
+            <div class=" square white" id="B4"></div>
+            <div class=" square black" id="C4"></div>
+            <div class=" square white" id="D4"></div>
+            <div class=" square black" id="E4"></div>
+            <div class=" square white" id="F4"></div>
+            <div class=" square black" id="G4"></div>
+            <div class=" square white" id="H4"></div>
+        </div>
+        <div class="row" id="r5">
+            <div class="1 square white" id="A5"></div>
+            <div class=" square black" id="B5"></div>
+            <div class=" square white" id="C5"></div>
+            <div class=" square black" id="D5"></div>
+            <div class=" square white" id="E5"></div>
+            <div class=" square black" id="F5"></div>
+            <div class=" square white" id="G5"></div>
+            <div class=" square black" id="H5"></div>
+        </div>
+        <div class="row" id="r6">
+            <div class=" square black" id="A6"></div>
+            <div class=" square white" id="B6"></div>
+            <div class=" square black" id="C6"></div>
+            <div class=" square white" id="D6"></div>
+            <div class=" square black" id="E6"></div>
+            <div class=" square white" id="F6"></div>
+            <div class=" square black" id="G6"></div>
+            <div class=" square white" id="H6"></div>
+        </div>
+        <div class="row" id="r7">
+            <div class=" square white" id="A7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondA"></div>
+            <div class=" square black" id="B7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondB"></div>
+            <div class=" square white" id="C7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondC"></div>
+            <div class=" square black" id="D7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondD"></div>
+            <div class=" square white" id="E7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondE"></div>
+            <div class=" square black" id="F7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondF"></div>
+            <div class=" square white" id="G7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondG"></div>
+            <div class=" square black" id="H7"><img src="images/Pawn-white_256x256_32.png" class="chesspieces img chesspieces whitepond whitec" id="whitepondH"></div>
+        </div>
+        <div class="row" id="r8">
+            <div class=" square black" id="A8" ><img src="images/Rook-white_256x256_32.png" class="img chesspieces  whitec whiterock" id="WhiteruckA"></div>
+            <div class=" square white" id="B8" ><img src="images/Knight-white_256x256_32.png" class="img chesspieces whitec" id="WhiteNigthB"></div>
+            <div class=" square black" id="C8" ><img src="images/7576-256x256x32.png" class="img chesspieces whitec" id="WhitebishopC"></div>
+            <div class=" square white" id="D8" ><img src="images/Queen-white_256x256_32.png" class="img chesspieces whitec" id="WhiteQueenD"></div>
+            <div class=" square black" id="E8" ><img src="images/King-white.ico" class="img chesspieces whitec whiteking" id="WhiteKingE"></div>
+            <div class=" square white" id="F8" ><img src="images/7576-256x256x32.png" class="img chesspieces whitec" id="WhitebishopF"></div>
+            <div class=" square black" id="G8" ><img src="images/Knight-white_256x256_32.png" class="img chesspieces whitec" id="WhiteNigtG"></div>
+            <div class=" square white" id="H8" ><img src="images/Rook-white_256x256_32.png" class="img chesspieces  whitec whiterock" id="WhiteruckH"></div>
+        </div>
+    </div>
+
+    <audio id="myAudio">
+        <source src="audio/Smiling Face With Heart-Shaped Eyes.ogg">
+    </audio>
+
+    <audio id="myAudio2">
+        <source src="audio/Winking Face.ogg">
+    </audio>
+
+    <audio id="cutting">
+        <source src="audio/Face%20With%20Tears%20of%20Joy.ogg">
+    </audio>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/home-controller.js"></script>
+</body>
+</html>
