@@ -1,9 +1,9 @@
 #main{
     height: 640px;
     width: 640px;
-    left: 400px;
+    left: 350px;
     position: absolute;
-    top: 100px;
+    top: 150px;
     margin: 20px;
     padding-top: 0px;
     border: 20px solid #333;
@@ -44,4 +44,7 @@ h1{
 .img{
     width: 70px;
     height: 70px;
+}
+body{
+    background-image: url("../images/3534534.jpeg");
 }

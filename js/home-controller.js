@@ -50,6 +50,14 @@ $('.chesspieces').on("click",function (eventData) {
         pondCount=0;
         whiteking(currentPossition);
     }
+    if (!(currentPossition.hasClass('clickpiece')) && currentPossition.hasClass('blackQueen')){
+        pondCount=0;
+        BlackRock(currentPossition);
+    }
+    if (!(currentPossition.hasClass('clickpiece')) && currentPossition.hasClass('whiteQueen')){
+        pondCount=0;
+        whitekRock(currentPossition);
+    }
 
 });
 
@@ -844,7 +852,7 @@ function whitekRock(eventData) {
         }
         if ($(currentSquare).hasClass('crosspices')){
             var y =$(currentpiece).clone();
-            $(currentpiece).remove();
+            // $(currentpiece).remove();
             $(currentSquare).children().remove();
             currentSquare.append(currentpiece);
             suares.removeClass('selectpath');
